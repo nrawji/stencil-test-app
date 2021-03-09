@@ -42,6 +42,7 @@ export const config: Config = {
   },
   devServer: {
     reloadStrategy: 'hmr',
+    port: parseInt(process.env.PORT || '') || 3333,
   },
   plugins: [
     inlineSvg(),

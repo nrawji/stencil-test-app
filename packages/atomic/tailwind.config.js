@@ -1,4 +1,4 @@
-const isDevWatch = process.argv.indexOf('--dev') > -1;
+const isDevWatch = process.argv.indexOf('--dev') > -1 && process.argv.indexOf("--heroku") < 0;
 
 module.exports = {
   purge: {
